@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martin Noska | Digital Business Card</title>
+ 
+<style>
+:root{
+--primary:#2563eb;
+--secondary:#1e293b;
+--accent:#60a5fa;
+--bg:#f8fafc;
+--card:#ffffff;
+--text:#334155;
+--light:#64748b;
+--shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+ 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+ 
+body{
+font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+background: linear-gradient(135deg,#eff6ff 0%,#f8fafc 100%);
+color:var(--text);
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:30px;
+}
+ 
+.container{
+width:100%;
+max-width:950px;
+}
+ 
+.card{
+background:var(--card);
+border-radius:24px;
+overflow:hidden;
+box-shadow:var(--shadow);
+}
+ 
+.hero{
+background:linear-gradient(135deg,var(--secondary),var(--primary));
+color:white;
+padding:60px 45px;
+text-align:center;
+}
+ 
+.profile-circle{
+width:120px;
+height:120px;
+border-radius:50%;
+background:rgba(255,255,255,0.15);
+border:3px solid rgba(255,255,255,0.3);
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 25px;
+font-size:42px;
+font-weight:bold;
+backdrop-filter:blur(10px);
+}
+ 
+.hero h1{
+font-size:2.8rem;
+margin-bottom:12px;
+}
+ 
+.headline{
+font-size:1.1rem;
+line-height:1.6;
+max-width:700px;
+margin:0 auto;
+color:rgba(255,255,255,0.92);
+}
+ 
+.content{
+padding:50px 45px;
+}
+ 
+.section-title{
+font-size:1.4rem;
+color:var(--secondary);
+margin-bottom:18px;
+font-weight:700;
+}
+ 
+.about{
+line-height:1.9;
+color:var(--text);
+margin-bottom:40px;
+font-size:1rem;
+}
+ 
+.quote{
+background:linear-gradient(135deg,#eff6ff,#dbeafe);
+border-left:5px solid var(--primary);
+border-radius:16px;
+padding:28px;
+text-align:center;
+margin-bottom:40px;
+}
+ 
+.quote p{
+font-size:1.2rem;
+font-style:italic;
+color:var(--secondary);
+font-weight:600;
+}
+ 
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+ 
+.contact-item{
+background:#f8fafc;
+border:1px solid #e2e8f0;
+border-radius:16px;
+padding:24px;
+transition:all 0.3s ease;
+}
+ 
+.contact-item:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 20px rgba(0,0,0,0.06);
+}
+ 
+.contact-label{
+font-size:0.85rem;
+text-transform:uppercase;
+letter-spacing:1px;
+color:var(--light);
+margin-bottom:8px;
+font-weight:600;
+}
+ 
+.contact-item a{
+color:var(--primary);
+text-decoration:none;
+font-weight:600;
+word-break:break-word;
+}
+ 
+.contact-item a:hover{
+text-decoration:underline;
+}
+ 
+.footer{
+text-align:center;
+padding:30px;
+color:var(--light);
+border-top:1px solid #e2e8f0;
+font-size:0.9rem;
+}
+ 
+.highlight{
+color:var(--accent);
+font-weight:700;
+}
+ 
+@media (max-width:768px){
+ 
+.hero{
+padding:45px 25px;
+}
+ 
+.hero h1{
+font-size:2.1rem;
+}
+ 
+.content{
+padding:35px 25px;
+}
+ 
+.headline{
+font-size:1rem;
+}
+ 
+.quote p{
+font-size:1.05rem;
+}
+}
+</style>
+</head>
+ 
+<body>
+ 
+<div class="container">
+ 
+<div class="card">
+ 
+<section class="hero">
+ 
+<div class="profile-circle">
+MN
+</div>
+ 
+<h1>Martin Noska</h1>
+ 
+<p class="headline">
+Student Athlete Mindset | Bringing Discipline, Teamwork,
+and Continuous Improvement to Every Challenge
+</p>
+ 
+</section>
+ 
+<section class="content">
+ 
+<h2 class="section-title">About Me</h2>
+ 
+<p class="about">
+I am an <span class="highlight">Undergraduate Intern</span>
+based in Bratislava with a strong passion for continuous learning
+and personal growth. I approach every challenge with discipline,
+determination, and a mindset focused on improvement.
+My background in sports has helped me develop resilience,
+teamwork, and a competitive drive to achieve excellent results.
+I am committed to building my skills, creating value, and making
+a meaningful impact wherever I contribute.
+</p>
+ 
+<div class="quote">
+<p>
+“Sport fuels my discipline, ambition drives my success.”
+</p>
+</div>
+ 
+<h2 class="section-title">Connect With Me</h2>
+ 
+<div class="contact-grid">
+ 
+<div class="contact-item">
+<div class="contact-label">Email</div>
+<a href="mailto:martin.noska3@gmail.com">
+martin.noska3@gmail.com
+</a>
+</div>
+ 
+<div class="contact-item">
+<div class="contact-label">LinkedIn</div>
+<a href="https://www.linkedin.com/in/martin-noska-54250333b"
+target="_blank">
+View LinkedIn Profile
+</a>
+</div>
+ 
+<div class="contact-item">
+<div class="contact-label">GitHub</div>
+<a href="https://github.com/Martin-Noska"
+target="_blank">
+Martin-Noska
+</a>
+</div>
+ 
+<div class="contact-item">
+<div class="contact-label">Location</div>
+Bratislava, Slovakia
+</div>
+ 
+</div>
+ 
+</section>
+ 
+<div class="footer">
+© 2026 Martin Noska • Digital Business Card
+</div>
+ 
+</div>
+ 
+</div>
+ 
+</body>
+</html>
